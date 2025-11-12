@@ -1,4 +1,11 @@
-// Recipe data in JSON format
+const recipeButtons = document.querySelectorAll(".recipe-btn");
+const recipeCard = document.getElementById("recipeCard");
+const recipeName = document.getElementById("recipeName");
+const recipeImage = document.getElementById("recipeImage");
+const recipeIngredients = document.getElementById("recipeIngredients");
+const recipeInstructions = document.getElementById("recipeInstructions");
+const defaultMessage = document.getElementById("defaultMessage");
+
 const recipes = [
   {
     id: 1,
@@ -72,16 +79,7 @@ const recipes = [
   }
 ];
 
-// DOM elements
-const recipeButtons = document.querySelectorAll(".recipe-btn");
-const recipeCard = document.getElementById("recipeCard");
-const recipeName = document.getElementById("recipeName");
-const recipeImage = document.getElementById("recipeImage");
-const recipeIngredients = document.getElementById("recipeIngredients");
-const recipeInstructions = document.getElementById("recipeInstructions");
-const defaultMessage = document.getElementById("defaultMessage");
 
-// Display selected recipe
 function showRecipe(index) {
   const recipe = recipes[index];
   if (!recipe) return;
@@ -102,7 +100,6 @@ function showRecipe(index) {
   recipeInstructions.textContent = recipe.instructions;
 }
 
-// Button click events
 recipeButtons.forEach((btn, index) => {
   btn.addEventListener("click", () => showRecipe(index));
 });
