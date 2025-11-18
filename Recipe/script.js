@@ -79,7 +79,6 @@ const recipes = [
   }
 ];
 
-
 function showRecipe(index) {
   const recipe = recipes[index];
   if (!recipe) return;
@@ -96,7 +95,6 @@ function showRecipe(index) {
     li.textContent = item;
     recipeIngredients.appendChild(li);
   });
-
   recipeInstructions.textContent = recipe.instructions;
 }
 
