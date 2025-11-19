@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <h2 class="bg-purple-900 text-white text-center p-4 text-4xl font-black">Form Validation Useing Javascript</h2>
+  <button id="btn">Click Me</button>
+  <div class="h-screen flex justify-center items-center">
+    <form class="flex flex-col justify-center items-center w-[500px] p-8 border-1 border-slate-500" id="demoform">
+      <div class="mb-4">
+        <label class="block mb-2 font-bold" for="">Name</label>
+        <input class="p-4 border-1 border-slate-500 rounded-2xl w-100" type="text" name="" id="username" required>
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2 font-bold" for="">Email</label>
+        <input class="p-4 border-1 border-slate-500 rounded-2xl w-100" type="email" name="" id="email" required>
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2 font-bold" for="">Age</label>
+        <input class="p-4 border-1 border-slate-500 rounded-2xl w-100" type="number" name="" id="age" required>
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2 font-bold" for="">Website</label>
+        <input class="p-4 border-1 border-slate-500 rounded-2xl w-100" type="url" name="" id="web" required>
+      </div>
+      <button class="bg-purple-900 w-100 text-white p-4 text-lg rounded-2xl" type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    // (() => {
+    //   const form = document.getElementById('demoform')
+
+    // })
+  </script>
+</body>
+
+</html>

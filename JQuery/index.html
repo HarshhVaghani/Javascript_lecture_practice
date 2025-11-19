@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Progress Bar</title>
 </head>
+
 <body class="bg-gray-100 min-h-screen flex items-center justify-center">
 
     <div class="bg-white p-8 rounded-xl shadow-xl w-96">
@@ -15,8 +17,7 @@
             <div id="progress" class="bg-blue-600 h-4 w-0"></div>
         </div>
 
-        <button id="startBtn"
-                class="mt-5 px-4 py-2 bg-blue-600 text-white rounded-lg">
+        <button id="startBtn" class="mt-5 px-4 py-2 bg-blue-600 text-white rounded-lg">
             Start
         </button>
     </div>
@@ -26,6 +27,6 @@
             $("#progress").animate({ width: "100%" }, 2000);
         });
     </script>
-
 </body>
+
 </html>
